@@ -156,60 +156,51 @@
     </aside>
 
     <!-- Portfolio -->
-    <section id="portfolio" class="portfolio">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-10 col-lg-offset-1 text-center">
-                    <h2 style="color: #fff;">Projects</h2>
-                    <hr class="small">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="portfolio-item">
-                                <a href="https://turingconnect.herokuapp.com">
-                                    <img class="img-portfolio img-responsive" src="img/turing-connect.png">
-                                </a>
+        <section id="portfolio" class="portfolio">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-10 col-lg-offset-1 text-center">
+                        <h2>Our Work</h2>
+                        <hr class="small">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="portfolio-item">
+                                    <a href="#">
+                                        <img class="img-portfolio img-responsive" src="img/typrr-burn.png">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="portfolio-item">
+                                    <a href="#">
+                                        <img class="img-portfolio img-responsive" src="img/cap-profile.png">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="portfolio-item">
+                                    <a href="#">
+                                        <img class="img-portfolio img-responsive" src="img/turing-connect.png">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="portfolio-item">
+                                    <a href="#">
+                                        <img class="img-portfolio img-responsive" src="img/eccentric.png">
+                                    </a>
+                                </div>
                             </div>
                         </div>
-                        <div class="col-md-6">
-                            <div class="portfolio-item">
-                                <a href="https://airbnbasement.herokuapp.com">
-                                    <img class="img-portfolio img-responsive" src="img/airbnbasement.png">
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="portfolio-item">
-                                <a href="https://eccentric-travel.herokuapp.com">
-                                    <img class="img-portfolio img-responsive" src="img/eccentric.png">
-                                </a>
-                            </div>
-                        </div>
-
-                        <div class="col-md-6">
-                            <div class="portfolio-item">
-                                <a href="https://marinacor1.github.io/typrr-burn/">
-                                    <img class="img-portfolio img-responsive" src="img/typrr-burn.png">
-                                </a>
-                            </div>
-                        </div>
+                        <!-- /.row (nested) -->
+                        <a href="#" class="btn btn-dark">View More Items</a>
                     </div>
-                    <div class="col-md-6">
-                        <div class="portfolio-item">
-                            <a href="https://www.captainu.com">
-                                <img class="img=portfolio img-responsive" src="img/cap-profile.png">
-                            </a>
-                        </div>
-                    </div>
-                    <!-- /.row (nested) -->
-                    <a href="#" class="btn btn-dark">View More Items</a>
+                    <!-- /.col-lg-10 -->
                 </div>
-                <!-- /.col-lg-10 -->
+                <!-- /.row -->
             </div>
-            <!-- /.row -->
-        </div>
-        <!-- /.container -->
-    </section>
-
+            <!-- /.container -->
+        </section>
     <!-- Call to Action -->
     <aside class="call-to-action bg-primary">
         <div class="container">
@@ -271,6 +262,11 @@
     $("#menu-toggle").click(function(e) {
         e.preventDefault();
         $("#sidebar-wrapper").toggleClass("active");
+    });
+
+    //Opens hidden projects
+    $("#moreprojects").click(function(){
+      $(".hidden-items").show();
     });
     // Scrolls to the selected menu item on the page
     $(function() {
