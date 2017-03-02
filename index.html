@@ -48,13 +48,13 @@
                 <a href="#about" onclick=$("#menu-close").click();>About</a>
             </li>
             <li>
-                <a href="#services" onclick=$("#menu-close").click();>Blog</a>
+                <a href="http:www.marinacorona.com" onclick=$("#menu-close").click();>Blog</a>
             </li>
             <li>
                 <a href="#portfolio" onclick=$("#menu-close").click();>Portfolio</a>
             </li>
             <li>
-                <a href="#contact" onclick=$("#menu-close").click();>Contact</a>
+                <a href="#contactspace" onclick=$("#menu-close").click();>Contact</a>
             </li>
         </ul>
     </nav>
@@ -181,17 +181,17 @@
                             </div>
 
                             <div class="w-100"></div>
-
-                            <div class="col-xs-6">
-                                <div class="portfolio-item">
-                                    <a href="http://turingconnect.herokuapp.com/">
-                                        <img class="img-portfolio img-responsive" src="img/turing-connect.png">
-                                    </a>
-                                </div>
-                            </div>
-
-                        <a href="#view-more" id="view-more" class="btn btn-dark">View More Items</a>
+                        <div class="col-xs-12">
+                            <a href="#view-more" id="view-more" class="btn btn-dark">View More Items</a>
+                        </div>
                         <!-- /.row (nested) -->
+                        <div class="col-xs-6 hidden-items" style="display:none;">
+                            <div class="portfolio-item">
+                                <a href="http://turingconnect.herokuapp.com/">
+                                    <img class="img-portfolio img-responsive" src="img/turing-connect.png">
+                                </a>
+                            </div>
+                        </div>
 
                         <div class="col-md-6 hidden-items" id=" " style="display: none;">
                             <div class="portfolio-item">
@@ -220,7 +220,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h3 style="color:#000; padding-right: 200px;">Contact me!</h3>
+                    <h2 style="color:#000; padding-right: 200px; font-weight: 200%;">Contact Me</h2>
                 </div>
             </div>
         </div>
@@ -280,6 +280,8 @@
     //Opens hidden projects
     $("#view-more").click(function(){
       $(".hidden-items").show();
+      $("#view-more").addClass('.hidden-view');
+      $(".btn-dark").hide();
     });
     // Scrolls to the selected menu item on the page
     $(function() {

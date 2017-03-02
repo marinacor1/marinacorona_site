@@ -258,3 +258,7 @@ footer {
 #view-more {
     padding: 12px 25px;
 }
+
+.hidden-view{
+    display: none;
+}
