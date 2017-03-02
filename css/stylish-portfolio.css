@@ -219,7 +219,7 @@ hr.small {
 
 .call-to-action {
     padding: 50px 0;
-    background: url(../img/Marina_snow.jpg) no-repeat center center scroll;
+    background: url(../img/Marina_snow.jpg);
 }
 
 .call-to-action .btn {
