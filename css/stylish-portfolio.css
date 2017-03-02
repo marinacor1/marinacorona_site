@@ -17,17 +17,12 @@ body {
 }
 
 .text-vertical-center {
-    /*display: table-cell;
+    display: table-cell;
     text-align: center;
-    vertical-align: middle;*/
-    order: 2;
-    flex: 2 0px;
+    vertical-align: middle;
 }
 
 .text-vertical-center h1 {
-    /*margin: 0;
-    padding: 0;*/
-    /*margin-top: 0px;*/
     font-size: 4.5em;
     font-weight: 700;
 }
@@ -154,7 +149,7 @@ hr.small {
 /* Header */
 
 .header {
-    display: flex;
+    display: table;
     position: relative;
     width: 100%;
     height: 80%;
@@ -165,16 +160,10 @@ hr.small {
     -o-background-size: cover;
 }
 
-.marina, .text-vertical-center {
-    flex: 1 225%;
-}
-
-.marina {
-    background: url(../img/Marina_Corona.jpg) no-repeat center scroll;
-    height: 100%;
-    width: 100%;
-    flex: 1 58%;
-    order: 2;
+#marina {
+    background: url(../img/Marina_Corona.jpg) no-repeat center center scroll;
+    height: 200px;
+    width: 350px;
 
 }
 /* About */
@@ -256,7 +245,7 @@ hr.small {
 /* Footer */
 
 footer {
-    padding: 100px 0;
+    padding: 60px 0;
 }
 
 #to-top {
